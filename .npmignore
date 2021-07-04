@@ -3,6 +3,10 @@ coverage/
 examples/
 test/
 
+dist/examples/
+
+tsconfig.json
+
 *.ts
 !*.d.ts
 *.examples.*
