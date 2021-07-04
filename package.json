@@ -1,6 +1,6 @@
 {
   "name": "@c-zw/accessor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Defined multi-level data store and access by near first.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
