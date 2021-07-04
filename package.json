@@ -1,0 +1,33 @@
+{
+  "name": "@c-zw/accessor",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cache",
+    "accessor",
+    "tool",
+    "zero-dependency",
+    "tiny"
+  ],
+  "author": "c-zw",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.19",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "mocha": "^9.0.1",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.0.0"
+  },
+  "dependencies": {
+    "@c-zw/cache": "^0.0.5"
+  }
+}
