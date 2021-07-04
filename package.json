@@ -1,8 +1,9 @@
 {
   "name": "@c-zw/accessor",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Defined multi-level data store and access by near first.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,7 +28,6 @@
     "nyc": "^15.1.0",
     "ts-node": "^10.0.0"
   },
-  "dependencies": {
-    "@c-zw/cache": "^0.0.5"
-  }
+  "dependencies": {},
+  "repository": "https://github.com/C-ZW/accessor"
 }
