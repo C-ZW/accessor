@@ -26,18 +26,6 @@ interface AccessorOptions {
 }
 ```
 
-## Accessible interface
-
-```ts
-export interface Accessible {
-    get: (key: string) => any | undefined | Promise<any | undefined>;
-    set: (key: string, value: any, ttl?: number) => any | Promise<any>;
-    delete: (key: string) => any | Promise<any>;
-    serialize?: (data: any) => any;
-    deserialize?: (serializeData: any) => any;
-}
-```
-
 ## Example
 
 ### use Map
@@ -49,7 +37,7 @@ async function test1() {
     const localCache3 = new Map();
     const accessor = new Accessor([localCache, localCache2, localCache3]);
 
-    accessor.set('1', 1);
+    await accessor.set('1', 1);
     console.log(`accessor get key 1: ${await accessor.get('1')}`);
     console.log(`localCache get key 1: ${localCache.get('1')}`);
     console.log(`localCache2 get key 1: ${localCache2.get('1')}`);
@@ -62,6 +50,18 @@ test1();
 // localCache get key 1: 1
 // localCache2 get key 1: 1
 // localCache3 get key 1: 1
+```
+
+## Accessible interface
+
+```ts
+export interface Accessible {
+    get: (key: string) => any | undefined | Promise<any | undefined>;
+    set: (key: string, value: any, ttl?: number) => any | Promise<any>;
+    delete: (key: string) => any | Promise<any>;
+    serialize?: (data: any) => any;
+    deserialize?: (serializeData: any) => any;
+}
 ```
 
 ### Customize defined
@@ -95,5 +95,3 @@ class LocalCache<T> implements Accessible {
     }
 }
 ```
-
-Use it
